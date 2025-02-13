@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a6cdc6;
+}
+
+.container {
+  width: 40%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  font-family: "Offside", serif;
+  font-size: 25px;
+}
+
+.game {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.box {
+  background-color: #ececed;
+  width: calc(85% / 3);
+  height: 150px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 18px;
+  border: none;
+  font-size: 80px;
+  color: #be3144;
+}
+
+#reset-btn {
+  padding: 15px 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border: 1px solid black;
+  background-color: #fbf5dd;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Offside", serif;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 650.99px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 950.99px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 951px) and (max-width: 1350.99px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1351px) {
+}
